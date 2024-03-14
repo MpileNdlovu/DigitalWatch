@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Alarm Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div id="clockContainer">
+        <h1 id="myH1">00:00:00</h1>
+        <div id="alarmContainer">
+            <div id="timeInputs">
+                <input id="hours" type="number" min="0" max="23">
+                <label for="hours">Hours</label>
+                <input id="minutes" type="number" min="0" max="59">
+                <label for="minutes">Minutes</label>
+                <input id="seconds" type="number" min="0" max="59">
+                <label for="seconds">Seconds</label>
+            </div>
+            <div id="btnContainer">
+                <button id="setalarm" onclick="setAlarm()">Set Alarm</button>
+                <button id="deletealarm" onclick="deleteAlarm()">Delete Alarm</button>                
+            </div>
+            <div id="alarmSet">
+                <h1 id="setAlarm_H1">Set Alarm!!!</h1>
+                <h3 id="myH3">00:00:00</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
